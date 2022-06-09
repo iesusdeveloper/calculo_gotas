@@ -1,0 +1,5 @@
+def calculo_macro(volume, tempo): return volume / (tempo * 3)
+def calculo_micro(volume, tempo): return volume / (tempo)    
+volum = int(input('Quantos ml de líquido será infudido? '))
+temp = float(input('Quanto tempo? '))
+print(round(calculo_macro(volum, temp)),' Macrogotas, ou ',round(calculo_micro(volum, temp)),' Microgotas')
